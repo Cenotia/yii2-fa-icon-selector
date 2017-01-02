@@ -37,9 +37,8 @@ For instance, to associate **faiconSelector** with the attribute `'cat_icon'` in
 	<?php echo $form->field($model, 'cat_icon')->widget(FaiconSelector::className()) ?>
 	...
 
-	what will be stored is the class content generated. For example : fa fa-bank fa-2x
-
-	So you will just to display like this for example.
+	//what will be stored is the class content generated. For example : fa fa-bank fa-2x
+	//So you will just to display like this for example.
 
 	...
 	<i class="<?= $model->cat_icon ?>"></i>
