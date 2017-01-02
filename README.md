@@ -5,11 +5,6 @@ YII2 Fa Icon Selector
 ####
 
 
-**FaiconSelector** This widget goes in the  library. 
-You can customize it with the provided fontawesome helpers
-
-
-
 ## Prerequisite ##
 
 This widget is a wrapper for [Bootstrap IconPicker](http://victor-valencia.github.io/bootstrap-iconpicker/) and concentrates only on the FontAwesome part and some of its helpers [Font Awesome](http://fontawesome.io/). 
@@ -36,10 +31,10 @@ You can manually install **FaiconSelector** by [downloading the source in ZIP-fo
 
 For instance, to associate **SymbolPicker** with the attribute `'icon'` in a form view, use code like this:
 
-    use sjaakp\symbolpicker\SymbolPicker;
+    use cenotia\component\faiconSelector;
         
 	...
-	<?= $form->field($model, 'icon')->widget(SymbolPicker::className()) ?>
+	<<?php echo $form->field($model, 'cat_icon')->widget(FaiconSelector::className()) ?>
 	...
 
 #### options ####
