@@ -46,7 +46,7 @@ For instance, to associate **faiconSelector** with the attribute `'cat_icon'` in
 
 #### options ####
 
-**FaiconSelector** runs 'out of the box'. It has the following options to modify it's behaviour:
-
 De facto, [InputWidget properties](http://www.yiiframework.com/doc-2.0/yii-widgets-inputwidget.html) can also be used.
+
+More options to be documented in coming versions.
 
