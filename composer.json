@@ -1,0 +1,24 @@
+{
+    "name": "cenotia/yii2-fa-icon-selector",
+    "description": "Widgets to add fontAwesome icons to a model. For example, categories for posts.",
+    "keywords": ["yii2", "extension", "widget", "font-awesome", "inputWidget"],
+    "type": "yii2-extension",
+    "homepage": "https://github.com/cenotia/yii2-fa-icon-selector",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cenotia",
+            "email": "xavier@cenotia.com",
+            "homepage": "http://cenotia.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "cenotia\\component\\faiconSelector\\": ""
+        }
+    }
+}
