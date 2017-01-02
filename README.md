@@ -1,7 +1,7 @@
 YII2 Fa Icon Selector
 ==================
 
-#### This widgets can be attached to a model attribute in order to associate a FontAwesome icon to it
+#### This widget can be attached to a model attribute in order to associate a FontAwesome icon to it with optional orientation, size and color.
 ####
 
 
