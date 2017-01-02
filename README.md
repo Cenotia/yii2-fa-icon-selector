@@ -34,7 +34,7 @@ For instance, to associate **SymbolPicker** with the attribute `'icon'` in a for
     use cenotia\component\faiconSelector;
         
 	...
-	<<?php echo $form->field($model, 'cat_icon')->widget(FaiconSelector::className()) ?>
+	<?php echo $form->field($model, 'cat_icon')->widget(FaiconSelector::className()) ?>
 	...
 
 #### options ####
