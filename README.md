@@ -15,11 +15,11 @@ This widget is a wrapper for [Bootstrap IconPicker](http://victor-valencia.githu
 
 The preferred way to install **FaiconSelector** is through [Composer](https://getcomposer.org/). Either add the following to the require section of your `composer.json` file:
 
-`"cenotia/yii2-fa-icon-selector": "*"` 
+`"cenotia/yii2-fa-icon-selector": "dev-master"` 
 
 Or run:
 
-`$ php composer.phar require cenotia/yii2-fa-icon-selector "*"` 
+`$ php composer.phar require cenotia/yii2-fa-icon-selector "dev-master"` 
 
 You can manually install **FaiconSelector** by [downloading the source in ZIP-format](https://github.com/cenotia/yii2-fa-icon-selector/archive/master.zip).
 
