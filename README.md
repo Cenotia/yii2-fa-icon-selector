@@ -29,13 +29,21 @@ You can manually install **FaiconSelector** by [downloading the source in ZIP-fo
 
 **FaiconSelector** is in namespace `cenotia\FaiconSelector`.
 
-For instance, to associate **SymbolPicker** with the attribute `'icon'` in a form view, use code like this:
+For instance, to associate **faiconSelector** with the attribute `'cat_icon'` in a form view, use code like this:
 
-    use cenotia\component\faiconSelector;
+    use cenotia\components\faiconSelector\FaiconSelector;
         
 	...
 	<?php echo $form->field($model, 'cat_icon')->widget(FaiconSelector::className()) ?>
 	...
+
+	what will be stored is the class content generated. For example : fa fa-bank fa-2x
+
+	So you will just to display like this for example.
+
+	...
+	<i class="<?= $model->cat_icon ?>"></i>
+	... 
 
 #### options ####
 
