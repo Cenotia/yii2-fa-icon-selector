@@ -30,7 +30,7 @@ You can manually install **FaiconSelector** by [downloading the source in ZIP-fo
 
 **FaiconSelector** is a Yii 2.0 [InputWidget](http://www.yiiframework.com/doc-2.0/yii-widgets-inputwidget.html). Like any other InputWidget it can be associated with a `model` and an `attribute` (or with a `name` and a `value`).
 
-**FaiconSelector** is in namespace `cenotia\FaiconSelector`.
+**FaiconSelector** is in namespace `cenotia\components\faiconSelector`.
 
 For instance, to associate **faiconSelector** with the attribute `'cat_icon'` in a form view, use code like this:
 
