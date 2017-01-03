@@ -19,4 +19,5 @@
 return [
     'Choose icon' => 'Selectionar un icono',
     'options' => 'Optiones',
+    'search' => 'buscar',
 ];

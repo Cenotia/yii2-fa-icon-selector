@@ -1,6 +1,9 @@
 YII2 Fa Icon Selector
 ==================
 
+![yii2-fa-icon-selector](https://cloud.githubusercontent.com/assets/1721936/21603984/10708d46-d1a1-11e6-997b-2d19fbdb6300.gif)
+
+
 #### This widget can be attached to a model attribute in order to associate a FontAwesome icon to it with optional orientation, size and color.
 ####
 
@@ -37,7 +40,8 @@ For instance, to associate **faiconSelector** with the attribute `'cat_icon'` in
 	<?php echo $form->field($model, 'cat_icon')->widget(FaiconSelector::className()) ?>
 	...
 
-	//what will be stored is the class content generated. For example : fa fa-bank fa-2x
+	//The class string is what will be stored. Example: fa fa-bank fa-2x
+	//So your field should be a varchar of 100 at least.
 	//So you will just to display like this for example.
 
 	...

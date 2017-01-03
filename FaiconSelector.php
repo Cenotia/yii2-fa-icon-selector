@@ -178,7 +178,7 @@ class FaiconSelector extends InputWidget
 			'labelHeader'     => '{0} / {1}',
 			'labelFooter'     => '{0} - {1}:[{2}]',
 			'search'          => true,
-			'searchText'      => \Yii::t('cenotia/iconpicker', 'SEARCH_ICON'),
+			'searchText'      => \Yii::t('cenotia/components/faiconSelector', 'Search'),
 			'selectedClass'   => 'btn-warning',
 			'unselectedClass' => 'btn-default',
 		];
@@ -239,17 +239,17 @@ class FaiconSelector extends InputWidget
 	 */
 	public function registerTranslations()
 	{
-		if (!isset(\Yii::$app->i18n->translations['cenotia/component/faiconSelector'])
+		if (!isset(\Yii::$app->i18n->translations['cenotia/components/faiconSelector'])
 			&& !isset
-			(\Yii::$app->i18n->translations['cenotia/component/faiconSelector/*'])
+			(\Yii::$app->i18n->translations['cenotia/component/sfaiconSelector/*'])
 		)
 		{
-			\Yii::$app->i18n->translations['cenotia/component/faiconSelector'] = [
+			\Yii::$app->i18n->translations['cenotia/components/faiconSelector'] = [
 				'class'            => 'yii\i18n\PhpMessageSource',
-				'basePath'         => '@cenotia/component/faiconSelector/messages',
+				'basePath'         => '@cenotia/components/faiconSelector/messages',
 				'forceTranslation' => true,
 				'fileMap'          => [
-					'cenotia/component/faiconSelector' => 'faiconSelector.php',
+					'cenotia/components/faiconSelector' => 'faiconSelector.php',
 				],
 			];
 		}
@@ -263,8 +263,9 @@ class FaiconSelector extends InputWidget
 	public function registerAssets()
 	{
 		$view = $this->getView();
-                BootstrapIconAsset::register($view);
-                FaiconselectorAsset::register($view);
+        BootstrapIconAsset::register($view);
+        FaiconselectorAsset::register($view);
+        
 		$targetId = $this->_id;
 		$iconPickerId = $this->pickerOptions['id'];
                 
@@ -353,7 +354,7 @@ JS;
 			$inp = Html::hiddenInput($this->name, $this->value, $this->options);
 		}
 		$displayAttr = Html::tag('p', null, [ 'id' => 'cenotia-icon-text']);
-                $picker = Html::button(\Yii::t('cenotia/component/faiconSelector', 'Choose icon'), $this->pickerOptions);
+                $picker = Html::button(\Yii::t('cenotia/components/faiconSelector', 'Choose icon'), $this->pickerOptions);
                 $pickerOpt = $this->renderdropdowns();
 
 		return Html::tag('div', $displayAttr. $picker . '&nbsp;&nbsp;  <strong>options</strong> ' . $pickerOpt. $inp, $this->containerOptions);
